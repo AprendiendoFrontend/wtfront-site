@@ -1,0 +1,35 @@
+{
+  "name": "wtfronted-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "co": "sui-mono commit",
+    "start": "sui-bundler dev",
+    "lint": "sui-lint js && sui-lint sass",
+    "precommit": "sui-precommit run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@s-ui/bundler": "3",
+    "@s-ui/lint": "2",
+    "@s-ui/mono": "1.38.0",
+    "@s-ui/precommit": "2.5.0",
+    "husky": "0.13.4"
+  },
+  "dependencies": {
+    "@s-ui/domain": "1",
+    "firebase": "5.5.9",
+    "react": "16.7.0-alpha.2",
+    "react-dom": "16.7.0-alpha.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "sasslintConfig": "./node_modules/@s-ui/lint/sass-lint.yml"
+}
