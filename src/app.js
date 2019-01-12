@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// https://res.cloudinary.com/midudev/image/upload/v1547288127/logo_wtf.png
+
 import wtfront from './domain'
 ;(async () => {
   const podcasts = await wtfront.get('list_podcasts_use_case').execute()
