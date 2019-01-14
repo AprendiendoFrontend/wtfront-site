@@ -24,7 +24,8 @@
     "@s-ui/domain": "1",
     "firebase": "5.5.9",
     "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2"
+    "react-dom": "16.7.0-alpha.2",
+    "xml-js": "^1.6.9"
   },
   "eslintConfig": {
     "extends": [

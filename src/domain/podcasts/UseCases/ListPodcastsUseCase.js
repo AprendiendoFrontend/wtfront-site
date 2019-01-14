@@ -5,8 +5,9 @@ export default class ListPodcastsUseCase extends UseCase {
     super()
     this._respository = respository
   }
+
   async execute() {
-    const podcastsEntities = await this._respository.all()
-    return podcastsEntities.map(p => p.toJSON())
+    const listOfPodcastsValueObject = await this._respository.all()
+    return listOfPodcastsValueObject.toJSON()
   }
 }
