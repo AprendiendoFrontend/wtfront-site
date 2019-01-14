@@ -1,21 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './ui/App'
+import './ui/styles.css'
 
-// https://res.cloudinary.com/midudev/image/upload/v1547288127/logo_wtf.png
-
-import wtfront from './domain'
-;(async () => {
-  const podcasts = await wtfront.get('list_podcasts_use_case').execute()
-  ReactDOM.render(
-    <React.Fragment>
-      <h1>WTFront</h1>
-      {podcasts.map(podcast => (
-        <div>
-          <h3>{podcast.title}</h3>
-          <audio controls key={podcast.id} src={podcast.url} />
-        </div>
-      ))}
-    </React.Fragment>,
-    document.getElementById('⚛️')
-  )
-})()
+ReactDOM.render(<App />, document.getElementById('⚛️'))

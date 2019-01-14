@@ -1,16 +1,16 @@
 import base from './base'
-// import development from './development'
+import development from './development'
 // import test from './test'
-// import production from './production'
+import production from './production'
 // import preproduction from './preproduction'
 
-const STAGE = process.env.STAGE || 'development'
+const STAGE = process.env.NODE_ENV || 'development'
 console.log('\n\nSTAGE:', STAGE, '\n\n') // eslint-disable-line
 
 const envConfig = {
-  //   development: development,
+  development: development,
   //   preproduction: preproduction,
-  //   production: production,
+  production: production
   //   test: test
 }
 
